@@ -1,2 +1,2 @@
-# Authentication Microservice in Node.js
+# User Authentication Microservice in Node.js
 
