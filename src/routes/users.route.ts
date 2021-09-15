@@ -7,8 +7,10 @@ const usersRoute = Router();
 
 usersRoute.get('/users', async (req: Request, res: Response, next: NextFunction) => {
     try{
+        console.log(req.headers['authorization'])
         const users = await userRepository.findAllUsers();
         res.status(StatusCodes.OK).send(users);
+
         
     } catch ( error ){
         next(error);
